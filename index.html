@@ -1,38 +1,73 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Personal Blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Condiment">
 
+<head>
+  <meta charset="utf-8">
+  <title>Personal Blog</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Condiment">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+  </style>
+</head>
 
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="headerBox">Andro's Blog</div>
-      <div class="banner">
-        <div id="home" class="photoBox1">
-          <a class="push_button red" href="#">Home</a></div>
-        <div id="recipe" class="photoBox1">Recipe</div>
-        <div id="forum" class="photoBox1">Forum</div>
-        <div id="about" class="photoBox1">About</div>
+<body>
+  <div class="container">
+    <div class="headerBox">Andro's Blog</div>
+    <div class="banner">
+      <div id="home" class="photoBox1">
+        <a class="button" href="#">Home</a>
       </div>
-
-      <div class="contentBox">
-        <div id="nestedGrid">
-          <div class="photoBox">
-            <div id="one"></div>
-            <div><h1>Favourite food</h1></div>
-          </div>
-          <div id="two" class="photoBox"></div>
-          <div id="three" class="photoBox"></div>
-          <div id="four" class="photoBox"></div>
-        </div>
-       </div>
-      <div class="footer">contact</div>
+      <div id="post" class="photoBox1">
+        <a class="button" href="blog-post.html">Post</a>
+      </div>
+      <div id="album" class="photoBox1">Album</div>
+      <div id="about" class="photoBox1">About</div>
     </div>
 
-  </body>
+    <div class="contentBox">
+      <div id="nestedGrid">
+        <div class="photoBox">
+          <div id="one"></div>
+          <div>
+            <h1>Favourite food</h1>
+            <p>Trying out new foods is so much fun. Cuisine is such a great way to experience other cultures, everyone eats!</p>
+            <a class="button" href="#">Look for recipe...</a>
+          </div>
+        </div>
+
+        <div class="photoBox">
+          <div id="two"></div>
+          <div>
+            <h1>Favourite Sport</h1>
+            <p>Trying out new foods is so much fun. Cuisine is such a great way to experience other cultures, everyone eats!</p>
+            <a class="button" href="#">Look for details...</a>
+          </div>
+        </div>
+
+        <div class="photoBox">
+          <div id="three"></div>
+          <div>
+            <h1>Favourite City</h1>
+            <p>Trying out new foods is so much fun. Cuisine is such a great way to experience other cultures, everyone eats!</p>
+            <a class="button" href="#">Look for details...</a>
+          </div>
+        </div>
+
+        <div class="photoBox">
+         <div id="four"></div>
+         <div>
+           <h1>Favourite Music</h1>
+           <p>Trying out new foods is so much fun. Cuisine is such a great way to experience other cultures, everyone eats!</p>
+           <a class="button" href="#">Look for details...</a>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">contact</div>
+
+
+</body>
+
 </html>
