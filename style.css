@@ -1,0 +1,134 @@
+<style type="text/css">
+/* @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap'); */
+body{
+  background-color: #444;
+  color:#fffff8;
+  font-size 27px
+}
+
+ .container{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: :50% 50%;
+   border:2px solid white;
+   grid-template-areas:
+   "hd hd hd hd hd hd hd hd"
+   "ba ba ba ba ba ba ba ba"
+   "cb cb cb cb cb cb cb cb"
+   "ft ft ft ft ft ft ft ft"
+ }
+ .headerBox{
+  grid-area:hd;
+ }
+ .banner{
+   grid-area: ba;
+ }
+ .contentBox{
+   grid-area: cb;
+   padding-left: 100px;
+   padding-right: 100px;
+ }
+ .footer{
+   grid-area:ft;
+ }
+
+ .headerBox{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 90px;
+   width: 100%;
+   border:1px solid white;
+   font-family:'Condiment', cursive;
+   font-size: 36px;
+   /* text-align: center; */
+ }
+ .banner{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+   justify-content: 50px;
+ }
+ .photoBox1{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 150px;
+   height:30px;
+   border-radius:5px;
+   border:1px solid white;
+   background:lightblue;
+
+ }
+
+#nestedGrid{
+   display: grid;
+   /* width:100%; */
+   margin:auto;
+   grid-template-columns:50% 50%;
+   grid-template-rows:50% 50%;
+   grid-gap:20px;
+   grid-template-areas:
+   "topLeft topRight"
+   "bottomLeft bottomRight"
+   background-color:lightblue;
+   justify-content: center;
+   margin-top: 20px;
+  }
+
+ .photoBox{
+   width: 250px;
+   height:300px;
+   border-radius:10px;
+   border:1px solid yellow;
+   /* background:pink; */
+   margin:auto;
+
+ }
+
+  #one{
+   /* grid-area:topLeft; */
+   background-image:url('images/foodimage1.jpg');
+   background-size:cover;
+   border-radius:10px;
+   height: 130px;
+  }
+
+ #two{
+   /* grid-area:topRight; */
+ }
+ #three{
+   /* grid-area:bottomLeft; */
+ }
+ #four{
+   /* grid-area:bottomRight; */
+ }
+
+.footer{
+   margin:auto;
+   width:100%;
+   background-color:#FFF8DC;
+}
+
+@@media (min-width:600px) and (max-width:900px){
+  .container{
+    display: grid;
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    border:2px solid white;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "ba ba ba ba ba ba ba ba"
+    "cb cb cb cb cb cb cb cb"
+    "ft ft ft ft ft ft ft ft"
+  }
+}
+
+
+
+</style>
