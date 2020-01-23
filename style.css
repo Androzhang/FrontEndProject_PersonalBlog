@@ -4,28 +4,57 @@ body{
   color:#fffff8;
   font-size 27px
 }
+@media only screen and (min-width: 768px){
 
+}
  .container{
    display: grid;
-   grid-template-columns: 50% 50%;
-   grid-template-rows: :50% 50%;
-   border:2px solid white;
+   /* grid-template-columns: 850px; */
+   grid-template-rows: auto;
+   /* border:2px solid white; */
    grid-template-areas:
-   "hd hd hd hd hd hd hd hd"
-   "ba ba ba ba ba ba ba ba"
-   "cb cb cb cb cb cb cb cb"
-   "ft ft ft ft ft ft ft ft"
+   "hd hd hd hd hd hd"
+   "ba ba ba ba ba ba"
+   "cb cb cb cb cb cb"
+   "ft ft ft ft ft ft"
  }
+
+ #home { grid-area: ba1; }
+ #post { grid-area: ba2; }
+ #album { grid-area: ba3; }
+ #about { grid-area: ba4; }
+ #baArea { grid-area: ba5; }
+ .NavBox{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 23%;
+   height:30px;
+   border-radius:5px;
+   border:1px solid white;
+   background:lightblue;
+   font-family: 'Oswald', sans-serif;
+ }
+
  .headerBox{
   grid-area:hd;
  }
+
  .banner{
-   grid-area: ba;
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   justify-content: 50px;
+    grid-area: ba;
  }
+
  .contentBox{
    grid-area: cb;
-   padding-left: 100px;
-   padding-right: 100px;
+   padding-left: 20px;
+   padding-right: 20px;
  }
  .footer{
    grid-area:ft;
@@ -43,15 +72,8 @@ body{
    font-size: 36px;
    /* text-align: center; */
  }
- .banner{
-   display:flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-items: center;
-   justify-content: center;
-   justify-content: 50px;
- }
- .photoBox1{
+
+ /* .photoBox1{
    display:flex;
    flex-direction: row;
    align-items: center;
@@ -62,31 +84,36 @@ body{
    border:1px solid white;
    background:lightblue;
    font-family: 'Oswald', sans-serif;
- }
+ } */
 
-#nestedGrid{
-   display: grid;
-   /* width:100%; */
-   margin:auto;
-   grid-template-columns:50% 50%;
-   grid-template-rows:50% 50%;
-   grid-gap:60px;
-   grid-template-areas:
-   "topLeft topRight"
-   "bottomLeft bottomRight"
-   background-color:lightblue;
-   justify-content: center;
-   margin-top: 20px;
-  }
+ #nestedGrid{
+    display: grid;
+    /* width:100%; */
+    /* margin:auto;
+    grid-template-columns:100%; */
+    grid-template-rows:auto;
+    grid-gap:30px;
+    grid-template-areas:
+    'card1 card2'
+    'card3 card4';
+    /* background-color:lightblue; */
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap:wrap;
+   }
+
+   #Card1 { grid-area: card1; }
+   #Card2 { grid-area: card2; }
+   #Card3 { grid-area: card3; }
+   #Card4 { grid-area: card4; }
 
  .photoBox{
-   width: 250px;
+   /* width: 250px; */
    height:390px;
    border-radius:10px;
-   border:1px solid white;
+   border:1px solid black;
    /* background:pink; */
    margin:auto;
-
  }
 
   #one{
@@ -120,26 +147,86 @@ body{
  }
 
 .footer{
-   margin:auto;
-   width:100%;
-   background-color:#FFF8DC;
+   /* margin:auto; */
+   width:auto;
+   background-color:#CD5C5C;
+   margin-top: 50px;
+   border-radius:10px;
 }
 
-@@media (min-width:600px) and (max-width:900px){
+.footer p{
+  width:auto;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+.footer span{
+  padding: 0 10px;
+
+}
+
+
+@media only screen and (max-width: 767px) {
   .container{
-    display: grid;
+    display:grid;
+    /* grid-template-columns: 300px 300px 300px; */
+    grid-template-rows: auto;
+    /* border:2px solid white; */
+    grid-template-areas:
+    "hd"
+    "ba"
+    "cb"
+    "ft"
+  }
+  #nestedGrid{
+     display: grid;
+     /* width:100%; */
+     margin:auto;
+     /* grid-template-columns:100%; */
+     grid-template-rows:auto;
+     grid-gap:30px;
+     grid-template-areas:
+     'card1'
+     'card2'
+     'card3'
+     'card4';
+
+     justify-content: center;
+     margin-top: 20px;
+     flex-wrap:wrap;
+  }
+  .NavBox{
+    width: 89%;
+  }
+
+}
+
+/*
+@media (min-width:812px) {
+  .container{
     display:grid;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 600px;
-    border:2px solid white;
+    grid-template-rows: auto;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "ba ba ba ba ba ba ba ba"
     "cb cb cb cb cb cb cb cb"
     "ft ft ft ft ft ft ft ft"
   }
-}
-
+  #nestedGrid{
+     display: grid;
+     margin:auto;
+     grid-template-columns:50% 50%;
+     grid-template-rows:50% 50%;
+     grid-gap:30px;
+     grid-template-areas:
+     "topLeft topRight"
+     "bottomLeft bottomRight"
+     justify-content: center;
+     margin-top: 20px;
+     flex-wrap:wrap;
+    }
+} */
 
 
 </style>

@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <title>Personal Blog</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Condiment">
   <style>
     @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
   </style>
 </head>
 
@@ -15,19 +17,19 @@
   <div class="container">
     <div class="headerBox">Andro's Blog</div>
     <div class="banner">
-      <div id="home" class="photoBox1">
+      <div id="home" class="NavBox">
         <a class="button" href="#">Home</a>
       </div>
-      <div id="post" class="photoBox1">
+      <div id="post" class="NavBox">
         <a class="button" href="blog-post.html">Post</a>
       </div>
-      <div id="album" class="photoBox1">Album</div>
-      <div id="about" class="photoBox1">About</div>
+      <div id="album" class="NavBox">Album</div>
+      <div id="about" class="NavBox">About</div>
     </div>
 
     <div class="contentBox">
       <div id="nestedGrid">
-        <div class="photoBox">
+        <div id="Card1" class="photoBox">
           <div id="one"></div>
           <div>
             <h1>Favourite food</h1>
@@ -36,7 +38,7 @@
           </div>
         </div>
 
-        <div class="photoBox">
+        <div id="Card2" class="photoBox">
           <div id="two"></div>
           <div>
             <h1>Favourite Sport</h1>
@@ -45,7 +47,7 @@
           </div>
         </div>
 
-        <div class="photoBox">
+        <div id="Card3" class="photoBox">
           <div id="three"></div>
           <div>
             <h1>Favourite City</h1>
@@ -54,19 +56,21 @@
           </div>
         </div>
 
-        <div class="photoBox">
-         <div id="four"></div>
-         <div>
-           <h1>Favourite Music</h1>
-           <p>Trying out new foods is so much fun. Cuisine is such a great way to experience other cultures, everyone eats!</p>
-           <a class="button" href="#">Look for details...</a>
-         </div>
+        <div id="Card4" class="photoBox">
+          <div id="four"></div>
+          <div>
+            <h1>Favourite Music</h1>
+            <p>Trying out new foods is so much fun. Cuisine is such a great way to experience other cultures, everyone eats!</p>
+            <a class="button" href="#">Look for details...</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="footer">contact</div>
-
+    <div class="footer">
+      <p><span>[Contact me]</span><a href="mailto:yoyointhesky@gmail.com">E-mail:yoyointhesky@gmail.com<a></p>
+    </div>
+  </div>
 
 </body>
 
