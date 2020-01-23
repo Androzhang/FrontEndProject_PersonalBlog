@@ -1,7 +1,7 @@
 <style type="text/css">
 body{
   background-color: #444;
-  color:#fffff8;
+  color: #fffff8;
   font-size 27px
 }
 @media only screen and (min-width: 768px){
@@ -25,20 +25,20 @@ body{
  #about { grid-area: ba4; }
  #baArea { grid-area: ba5; }
  .NavBox{
-   display:flex;
+   display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
    width: 23%;
-   height:30px;
-   border-radius:5px;
-   border:1px solid white;
-   background:lightblue;
+   height: 30px;
+   border-radius: 5px;
+   border: 1px solid white;
+   background: lightblue;
    font-family: 'Oswald', sans-serif;
  }
 
  .headerBox{
-  grid-area:hd;
+  grid-area: hd;
  }
 
  .banner{
@@ -48,7 +48,7 @@ body{
    align-items: center;
    justify-content: center;
    justify-content: 50px;
-    grid-area: ba;
+   grid-area: ba;
  }
 
  .contentBox{
@@ -57,49 +57,37 @@ body{
    padding-right: 20px;
  }
  .footer{
-   grid-area:ft;
+   grid-area: ft;
+   font-style: italic;
  }
 
  .headerBox{
-   display:flex;
+   display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    height: 90px;
    width: 100%;
-   border:1px solid white;
-   font-family:'Condiment', cursive;
+   border: 1px solid white;
+   font-family: 'Condiment', cursive;
    font-size: 36px;
    /* text-align: center; */
  }
-
- /* .photoBox1{
-   display:flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   width: 150px;
-   height:30px;
-   border-radius:5px;
-   border:1px solid white;
-   background:lightblue;
-   font-family: 'Oswald', sans-serif;
- } */
 
  #nestedGrid{
     display: grid;
     /* width:100%; */
     /* margin:auto;
     grid-template-columns:100%; */
-    grid-template-rows:auto;
-    grid-gap:30px;
+    grid-template-rows: auto;
+    grid-gap: 30px;
     grid-template-areas:
     'card1 card2'
     'card3 card4';
     /* background-color:lightblue; */
     justify-content: center;
     margin-top: 20px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
    }
 
    #Card1 { grid-area: card1; }
@@ -109,53 +97,53 @@ body{
 
  .photoBox{
    /* width: 250px; */
-   height:390px;
-   border-radius:10px;
-   border:1px solid black;
+   height: 390px;
+   border-radius: 10px;
+   border: 1px solid grey;
    /* background:pink; */
-   margin:auto;
+   margin: auto;
  }
 
   #one{
    /* grid-area:topLeft; */
-   background-image:url('images/foodimage1.jpg');
-   background-size:cover;
-   border-radius:10px;
-   height: 180px;
+   background-image: url('images/foodimage1.jpg');
+   background-size: cover;
+   border-radius: 10px;
+   height: 200px;
   }
 
  #two{
    /* grid-area:topRight; */
-   background-image:url('images/sport.png');
-   background-size:cover;
-   border-radius:10px;
-   height: 180px;
+   background-image: url('images/sport.png');
+   background-size: cover;
+   border-radius: 10px;
+   height: 200px;
  }
  #three{
    /* grid-area:bottomLeft; */
-   background-image:url('images/City.jpg');
-   background-size:cover;
-   border-radius:10px;
-   height: 180px;
+   background-image: url('images/City.jpg');
+   background-size: cover;
+   border-radius: 10px;
+   height: 200px;
  }
  #four{
    /* grid-area:bottomRight; */
-   background-image:url('images/Music.jpg');
-   background-size:cover;
-   border-radius:10px;
-   height: 180px;
+   background-image: url('images/Music.jpg');
+   background-size: cover;
+   border-radius: 10px;
+   height: 200px;
  }
 
 .footer{
    /* margin:auto; */
-   width:auto;
-   background-color:#CD5C5C;
+   width: auto;
+   background-color: #CD5C5C;
    margin-top: 50px;
-   border-radius:10px;
+   border-radius: 10px;
 }
 
 .footer p{
-  width:auto;
+  width: auto;
   text-align: center;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
@@ -168,7 +156,7 @@ body{
 
 @media only screen and (max-width: 767px) {
   .container{
-    display:grid;
+    display: grid;
     /* grid-template-columns: 300px 300px 300px; */
     grid-template-rows: auto;
     /* border:2px solid white; */
@@ -181,10 +169,10 @@ body{
   #nestedGrid{
      display: grid;
      /* width:100%; */
-     margin:auto;
+     margin: auto;
      /* grid-template-columns:100%; */
-     grid-template-rows:auto;
-     grid-gap:30px;
+     grid-template-rows: auto;
+     grid-gap: 30px;
      grid-template-areas:
      'card1'
      'card2'
@@ -193,7 +181,7 @@ body{
 
      justify-content: center;
      margin-top: 20px;
-     flex-wrap:wrap;
+     flex-wrap: wrap;
   }
   .NavBox{
     width: 89%;

@@ -1,40 +1,42 @@
 <style type="text/css">
 
 .headerBox{
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 90px;
   width: 100%;
-  border:1px solid white;
-  font-family:'Condiment', cursive;
+  border: 1px solid white;
+  font-family: 'Condiment', cursive;
   font-size: 36px;
   /* text-align: center; */
 }
 .banner{
-  display:flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   justify-content: 50px;
+   grid-area: ba;
 }
+
 .photoBox1{
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 150px;
-  height:30px;
-  border-radius:5px;
-  border:1px solid white;
-  background:lightblue;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: lightblue;
   font-family: 'Oswald', sans-serif;
 }
 
 .author{
-    margin:auto;
+    margin: auto;
     text-align: left;
     font-weight: bold;
 }
